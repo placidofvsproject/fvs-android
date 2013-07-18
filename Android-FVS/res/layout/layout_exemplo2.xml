@@ -7,7 +7,7 @@
     <TextView 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Este é o segundo exemplo com no Android"
+        android:text="Este é o segundo exemplo com o Android"
         />
 
 </LinearLayout>
