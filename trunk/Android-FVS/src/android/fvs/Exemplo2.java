@@ -10,3 +10,5 @@ public class Exemplo2 extends Activity {
 		setContentView(R.layout.layout_exemplo2);
 	}
 }
+//ImageView img2 = (ImageView) findViewById(R.id.imagem2);
+//img2.setImageResource(R.drwable.android2);
