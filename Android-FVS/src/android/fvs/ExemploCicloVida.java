@@ -11,36 +11,36 @@ public class ExemploCicloVida extends Activity {
 	public void onCreate(Bundle ex){
 		super.onCreate(ex);
 		setContentView(R.layout.main);
-		Log.i(CATEGORIA, ". onCreate() chamado");
+		Log.i(CATEGORIA, ".onCreate() chamado");
 	}
 	
 	public void onStart(){
 		super.onStart();
-		Log.i(CATEGORIA, ". onStart() chamado");
+		Log.i(CATEGORIA, ".onStart() chamado");
 	}
 	
 	public void onRestart(){
 		super.onStart();
-		Log.i(CATEGORIA, ". onRestart() chamado");
+		Log.i(CATEGORIA, ".onRestart() chamado");
 	}
 	
 	public void onResume(){
 		super.onStart();
-		Log.i(CATEGORIA, ". onResume() chamado");
+		Log.i(CATEGORIA, ".onResume() chamado");
 	}
 	
 	public void onPause(){
 		super.onPause();
-		Log.i(CATEGORIA, ". onPause() chamado");
+		Log.i(CATEGORIA, ".onPause() chamado");
 	}
 	
 	public void onStop(){
 		super.onStop();
-		Log.i(CATEGORIA, ". onStop() chamado");
+		Log.i(CATEGORIA, ".onStop() chamado");
 	}
 	
 	public void onDestroy(){
 		super.onDestroy();
-		Log.i(CATEGORIA, ". onDestroy() chamado");
+		Log.i(CATEGORIA, ".onDestroy() chamado");
 	}
 }
