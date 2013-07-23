@@ -60,6 +60,12 @@
         </activity>
         <activity android:name="Tela2" android:label="Tela2">
         </activity>
+        <activity android:label="Lista1" android:name="lista.ExemploListActivity1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
