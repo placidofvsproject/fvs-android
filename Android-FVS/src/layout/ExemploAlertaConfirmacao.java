@@ -38,6 +38,15 @@ public class ExemploAlertaConfirmacao extends Activity implements
 				Toast.makeText(ExemploAlertaConfirmacao.this, "Clicou em Sim!", Toast.LENGTH_SHORT).show();
 			}
 		});
+		alerta.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				// TODO Auto-generated method stub
+				Toast.makeText(ExemploAlertaConfirmacao.this, "Clicou em Não!", Toast.LENGTH_SHORT).show();
+			}
+		});
+		alerta.show();
 	}
 
 }
