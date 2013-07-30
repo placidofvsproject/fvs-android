@@ -13,7 +13,7 @@ public class ExemploToggleButton extends Activity implements OnClickListener {
 
 	ToggleButton toggle;
 	Button b;
-	public void onClick(Bundle icicle){
+	public void onCreate(Bundle icicle){
 		super.onCreate(icicle);
 		setContentView(R.layout.exemplo_toggle_button);
 		toggle = (ToggleButton) findViewById(R.id.toggle);
@@ -24,7 +24,6 @@ public class ExemploToggleButton extends Activity implements OnClickListener {
 	@Override
 	public void onClick(View arg0) {
 		// TODO Auto-generated method stub
-		//if(arg0==b){}
 		Toast.makeText(this, "Selecionado: "+toggle.isChecked(), Toast.LENGTH_LONG).show();
 	}
 
