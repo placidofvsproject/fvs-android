@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.fvs.R;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -34,7 +35,7 @@ public class ExemploBD extends Activity {
 		sServidor = (Spinner) findViewById(R.id.sServidor);
 		cEmail = (CheckBox) findViewById(R.id.cEmail);
 		
-		serv.add("-- SELECIONE --");
+		serv.add("SELECIONE");
 		serv.add("YAHOO");
 		serv.add("HOTMAIL");
 		serv.add("GMAIL");
@@ -49,6 +50,21 @@ public class ExemploBD extends Activity {
 		super.onCreateOptionsMenu(menu);
 		menu.add(0,0,0,"Salvar");
 		menu.add(0,1,0,"Sair");
+		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// TODO Auto-generated method stub
+		super.onOptionsItemSelected(item);
+		switch (item.getItemId()) {
+		case 0:
+			// TODO "Salvar" code here
+			break;
+		case 1:
+			finish();
+			break;
+		}
 		return true;
 	}
 }
