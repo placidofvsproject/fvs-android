@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import android.app.Activity;
 import android.fvs.R;
 import android.os.Bundle;
+import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -40,5 +41,14 @@ public class ExemploBD extends Activity {
 		ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, serv);
 		adaptador.setDropDownViewResource(android.R.layout.simple_spinner_item);
 		sServidor.setAdapter(adaptador);
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// TODO Auto-generated method stub
+		super.onCreateOptionsMenu(menu);
+		menu.add(0,0,0,"Salvar");
+		menu.add(0,1,0,"Sair");
+		return true;
 	}
 }
